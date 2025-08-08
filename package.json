@@ -1,0 +1,30 @@
+{
+  "name": "job-extractor-api",
+  "version": "1.0.0",
+  "description": "Example local API server for the Job Info Extractor browser extension",
+  "main": "example-server.js",
+  "scripts": {
+    "start": "node example-server.js",
+    "dev": "nodemon example-server.js",
+    "setup": "cp env.example .env"
+  },
+  "keywords": [
+    "job",
+    "extractor",
+    "api",
+    "browser-extension",
+    "gemini"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

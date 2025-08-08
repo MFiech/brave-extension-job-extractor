@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Job Info Extractor",
+  "version": "1.1",
+  "description": "Extract job position and company name from job listing pages using Google AI and send to webhook",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "http://localhost:*",
+    "https://localhost:*",
+    "https://*.greenhouse.io/*",
+    "https://*.greenhousejobs.com/*",
+    "https://api.openai.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Extract Job Info"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["config.js", "content.js"]
+    }
+  ]
+} 
