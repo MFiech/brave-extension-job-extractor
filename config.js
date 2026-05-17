@@ -4,7 +4,7 @@
 // Default configuration values
 const DEFAULT_CONFIG = {
   // These can be overridden by user input in the extension popup
-  defaultWebhookUrl: 'http://localhost:3000/api/jobs',
+  defaultWebhookUrl: 'https://podcast-analyzer-server.tail6ec6d8.ts.net:5678/webhook/592bdbcd-bb57-432e-94a1-91491bfff2c0',
   defaultOpenAIModel: 'gpt-4o-mini',
   
   // OpenAI API settings
